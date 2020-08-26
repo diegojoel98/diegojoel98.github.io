@@ -67,6 +67,9 @@
    text-align: center;
    margin-top: 20px;
 }
+.font-project {
+   font-size: x-large;
+}
 .desc{
    padding-left: 25px;
    font-size: 1.15em;

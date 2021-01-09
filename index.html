@@ -41,18 +41,24 @@
             <h1 class="text-green-900 pt-5 font-weight-bold">Diego Joel Gongora
                 <img src="img/diego-gongora.png" alt="Diego Gongora Profile" class="img-responsive right rounded">
             </h1>
-            <p class="font-medium">Computer Science student, interested in Web Development, especially frontend
+            <p class="font-medium d-none d-sm-block">Computer Science student, interested in Web Development, especially
+                frontend
                 development</p>
         </div>
-        <div class="container d-none d-sm-block col-sm-10 col-md-8 col-lg-6 pt-5 mt-4">
-            <ul>
-                <li class="list-inline list-inline-item list-unstyled"><a class="btn myBtn"
-                        href="#education">Education</a></li>
-                <li class="list-inline list-inline-item list-unstyled"><a class="btn myBtn" href="#github">My Github</a>
-                </li>
-                <li class="list-inline list-inline-item list-unstyled"><a class="btn myBtn" href="#about">About me</a>
-                </li>
-            </ul>
+        <div class="container col-sm-10 col-md-8 col-lg-6 pt-5 mt-4">
+            <div role="group">
+                <button type="button" class="btn btn-secondary mt-1"><a class="text-white text-decoration-none"
+                        href="education.html#projects">My
+                        projects</a></button>
+                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle mt-1"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Resume
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                    <a class="dropdown-item" href="img/docs/CV.pdf" target="_blank">Mi curriculum - es</a>
+                    <a class="dropdown-item" href="img/docs/CV-en.pdf" target="_blank">My resume - en</a>
+                </div>
+            </div>
         </div>
     </header>
     <h2 id="education">My Education</h2>

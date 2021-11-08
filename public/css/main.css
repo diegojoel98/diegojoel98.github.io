@@ -1,7 +1,9 @@
+/* general styles */
 *{
    box-sizing: border-box;
 }
 
+/* header */
 .bg-header {
    background-color: #9ae6b4;
    height: 300px;
@@ -25,7 +27,7 @@
    text-decoration: none;
    padding: 13px;
    font-family: 'Roboto', sans-serif;
-   font-weight: 500;    
+   font-weight: 600;    
    border-radius: .25rem;    
    border-bottom: 4px solid #2E7D32;
 }
@@ -35,6 +37,11 @@
    color: #ffffff;
 }
 
+.nav-buttons {
+   padding: 10px;
+   font-weight: 600;
+}
+
 .bg-gradient {
    margin-top: 0.5em;
    background: #4AC29A;  /* fallback for old browsers */
@@ -42,6 +49,7 @@
    background: linear-gradient(to right, #BDFFF3, #4AC29A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+/* main section */
 #education, #github, #about, #skills {  /* Titles elements */
    text-align: center;
    margin-top: 1.2em; 
@@ -105,8 +113,15 @@
    transition: all 0.3s ease-in;
 }
 
+/* footer */
 footer {
    background-color: #B2DFDB;   
+}
+
+.my-contact {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 .links {
@@ -140,6 +155,15 @@ footer {
    text-decoration: solid;
 }
 
+/* media queries */
+@media screen and (min-width: 767px) {
+   .my-contact {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+   }
+}
+
 @media screen and (max-width: 767px) {
    section.container-fluid > div.row > div.card{
       margin-bottom: 0.3rem!important;
@@ -156,11 +180,19 @@ footer {
       display: block;
    }
 
+   div.container > h1.text-green-900 {
+      padding-top: 8px!important;
+   }
+
 }
 
 @media screen and (max-width: 860px) {
    h1.text-green-900 {
       padding-top: 0!important;
+   }
+
+   div.container > h1.text-green-900 {
+      padding-top: 8px!important;
    }
 }
 

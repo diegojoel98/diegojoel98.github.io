@@ -1,9 +1,9 @@
-<!doctype html>
+<!Doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 <!--<![endif]-->
 
 <head>
@@ -14,7 +14,7 @@
     <meta name="author" content="Diego Joel Gongora Gamboa">
     <meta name="keywords" content="Portfolio, Web Developer, HTML, CSS">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="icono.ico">
+    <link rel="icon" href="favicon.ico">
     <script src="https://kit.fontawesome.com/1329ffc21d.js" crossorigin="anonymous"></script>
 
     <!-- Latest compiled and minified CSS -->
@@ -29,163 +29,171 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="public/css/main.css">
 </head>
 
 <body>
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+
+    <!-- header -->
     <header class="bg-header">
         <div class="container col-md-8">
-            <h1 class="text-green-900 pt-5 font-weight-bold">Diego Joel Gongora Gamboa
-                <img src="img/diego-gongora.png" alt="Diego Gongora Profile" class="img-responsive right rounded">
+            <h1 class="text-green-900 pt-5 font-weight-bold h1-name">Diego Joel Gongora Gamboa
             </h1>
+            <img src="public/img/diego-gongora.png" alt="Diego Gongora Profile" class="img-responsive right rounded">
             <p class="font-medium d-none d-sm-block">Computer Science student, interested in Web Development, especially
                 frontend
                 development</p>
         </div>
         <div class="container col-sm-10 col-md-8 col-lg-6 pt-5 mt-4">
             <div role="group">
-                <button type="button" class="btn btn-secondary mt-1"><a class="text-white text-decoration-none"
-                        href="education.html#projects">My
-                        projects</a></button>
-                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle mt-1"
+                <a class="text-white text-decoration-none" href="education.html#projects"><button type="button"
+                        class="btn btn-secondary mt-1 nav-buttons">My
+                        projects</button></a>
+                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle mt-1 nav-buttons"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Resume
                 </button>
                 <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                    <a class="dropdown-item" href="docs/CV-online.pdf" target="_blank">Mi curriculum - es</a>
-                    <a class="dropdown-item" href="docs/CV-en-online.pdf" target="_blank">My resume - en</a>
+                    <a class="dropdown-item" href="public/docs/CV-DiegoGongora.pdf" target="_blank">Mi curriculum -
+                        es</a>
+                    <a class="dropdown-item" href="public/docs/CVen-DiegoGongora.pdf" target="_blank">My resume - en</a>
                 </div>
             </div>
         </div>
     </header>
-    <h2 id="education">My Education</h2>
-    <section class="container-fluid bg-gradient">
-        <div class="row">
-            <div class="col-12 col-sm-12 col-md-4 card">
-                <p class="card-title">Academic</p>
-                <p class="desc">My academic training and my projects</p>
-                <div class="btn-center">
-                    <a href="education.html" class="btn myBtn ">Go</a>
-                </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-4 card">
-                <p class="card-title">Online Courses</p>
-                <p class="desc">The online courses I have completed</p>
-                <div class="btn-center">
-                    <a href="online-courses.html" class="btn myBtn">Go</a>
-                </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-4 card">
-                <p class="card-title">Others activities</p>
-                <p class="desc">Another activities I have participated</p>
-                <div class="btn-center">
-                    <a href="others.html" class="btn myBtn ">Go</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <h2 id="skills" class="text-center mt-5 mb-3">My professional skills</h2>
-    <section class="container">
-        <div class="row">
-            <div class="col-12 col-sm-12 col-md-6">
-                <a class="list-group-item list-group-item-action list-group-item-warning text-center my-font">HTML <i
-                        class="fab fa-html5 my-font2"></i></a>
-            </div>
-            <div class="col-12 col-sm-12 col-md-6">
-                <a class="list-group-item list-group-item-action list-group-item-info text-center my-font">CSS <i
-                        class="fab fa-css3-alt my-font2"></i> </a>
-            </div>
-            <div class="col-12 col-sm-12 col-md-6">
-                <a class="list-group-item list-group-item-action list-group-item-primary text-center my-font">Bootstrap
-                    <i class="fab fa-bootstrap my-font2"></i></a>
-            </div>
-            <div class="col-12 col-sm-12 col-md-6">
-                <a class="list-group-item list-group-item-action list-group-item-warning text-center my-font">JavaScript
-                    <i class="fab fa-js my-font2"></i></a>
-            </div>
-            <div class="col-12 col-sm-12 col-md-6">
-                <a class="list-group-item list-group-item-action list-group-item-secondary text-center my-font">Git <i
-                        class="fab fa-git-alt my-font2"></i></a>
-            </div>
-            <div class="col-12 col-sm-12 col-md-6">
-                <a class="list-group-item list-group-item-action list-group-item-primary text-center my-font">TypeScript
-                    <i class="fas fa-text-height my-font2"></i></a>
-            </div>
-            <div class="col-12 col-sm-12 col-md-6">
-                <a class="list-group-item list-group-item-action list-group-item-success text-center my-font">NodeJs <i
-                        class="fab fa-node my-font2"></i></a>
-            </div>
-            <div class="col-12 col-sm-12 col-md-6">
-                <a class="list-group-item list-group-item-action list-group-item-danger text-center my-font">Angular <i
-                        class="fab fa-angular my-font2"></i></a>
-            </div>
-            <div class="col-12 col-sm-12 col-md-6">
-                <a class="list-group-item list-group-item-action list-group-item-info text-center my-font">React <i
-                        class="fab fa-react my-font2"></i></a>
-            </div>
-            <div class="col-12 col-sm-12 col-md-6">
-                <a class="list-group-item list-group-item-action list-group-item-success text-center my-font">Vue Js <i
-                        class="fab fa-vuejs my-font2"></i></a>
-            </div>
-            <div class="col-12 col-sm-12 col-md-6">
-                <a class="list-group-item list-group-item-action list-group-item-light text-center my-font">MySQL <i
-                        class="fas fa-database my-font2"></i></a>
-            </div>
-            <div class="col-12 col-sm-12 col-md-6">
-                <a class="list-group-item list-group-item-action list-group-item-dark text-center my-font">MongoDB <i
-                        class="fas fa-table my-font2"></i></a>
-            </div>
-            <!--<div class="col-12 col-sm-12 col-md-6">
-                <div class="list-group">
-                <a class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-            </div>
-            </div>-->
-        </div>
-        </div>
-    </section>
-    <h2 id="github">My Github repositories</h2>
-    <section class="container-fluid">
-        <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4 card2">
-                <p class="card-title mb-1">Github</p>
-                <p class="text-center my-font mb-0">My code contributions</p>
-                <i class="fab fa-github mx-auto d-block mb-2" style="font-size: 50px;text-align: center;"></i>
-                <a href="https://github.com/diegojoel98" class="btn myBtn d-block" target="_blank">My Github Site</a>
-            </div>
-        </div>
-    </section>
-    <h2 id="about">About me</h2>
-    <footer>
-        <p class="font-italic font-medium text-center">"Every day, developing a website is more difficult, so we just
-            have to learn more and more and more ..."</p><br>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <a href="mailto:diegojoel98@gmail.com" class="links ml-5 pl-4"><i class="fa fa-envelope"
-                            style="font-size: 30px;"></i> diegojoel98@gmail.com</a>
-                </div>
-                <div class="col-md-6">
-                    <a href="https://www.linkedin.com/in/diego-joel-gongora-gamboa-1b634b1ab" class="links ml-5 pl-4"
-                        target="_blank"><i class="fab fa-linkedin" style="font-size: 30px;"></i> Linkedin</a>
-                </div>
-            </div>
-        </div>
+    <!-- end header -->
 
+    <!-- main -->
+    <main>
+        <h2 id="education">My Education</h2>
+        <section class="container-fluid bg-gradient">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-4 card">
+                    <p class="card-title">Academic</p>
+                    <p class="desc">My academic training and my projects</p>
+                    <div class="btn-center">
+                        <a href="education.html" class="btn myBtn ">Go</a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 card">
+                    <p class="card-title">Online Courses</p>
+                    <p class="desc">The online courses I have completed</p>
+                    <div class="btn-center">
+                        <a href="online-courses.html" class="btn myBtn">Go</a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 card">
+                    <p class="card-title">Others activities</p>
+                    <p class="desc">Another activities I have participated</p>
+                    <div class="btn-center">
+                        <a href="others.html" class="btn myBtn ">Go</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <h2 id="skills" class="text-center mt-5 mb-3">My professional skills</h2>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6">
+                    <a class="list-group-item list-group-item-action list-group-item-warning text-center my-font">HTML
+                        <i class="fab fa-html5 my-font2"></i></a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6">
+                    <a class="list-group-item list-group-item-action list-group-item-info text-center my-font">CSS <i
+                            class="fab fa-css3-alt my-font2"></i> </a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6">
+                    <a class="list-group-item list-group-item-action list-group-item-primary text-center my-font">Bootstrap
+                        <i class="fab fa-bootstrap my-font2"></i></a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6">
+                    <a class="list-group-item list-group-item-action list-group-item-warning text-center my-font">JavaScript
+                        <i class="fab fa-js my-font2"></i></a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6">
+                    <a class="list-group-item list-group-item-action list-group-item-secondary text-center my-font">Git
+                        <i class="fab fa-git-alt my-font2"></i></a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6">
+                    <a class="list-group-item list-group-item-action list-group-item-primary text-center my-font">TypeScript
+                        <i class="fas fa-text-height my-font2"></i></a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6">
+                    <a class="list-group-item list-group-item-action list-group-item-success text-center my-font">NodeJs
+                        <i class="fab fa-node my-font2"></i></a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6">
+                    <a class="list-group-item list-group-item-action list-group-item-danger text-center my-font">Angular
+                        <i class="fab fa-angular my-font2"></i></a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6">
+                    <a class="list-group-item list-group-item-action list-group-item-info text-center my-font">React <i
+                            class="fab fa-react my-font2"></i></a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6">
+                    <a class="list-group-item list-group-item-action list-group-item-success text-center my-font">Vue Js
+                        <i class="fab fa-vuejs my-font2"></i></a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6">
+                    <a class="list-group-item list-group-item-action list-group-item-light text-center my-font">MySQL <i
+                            class="fas fa-database my-font2"></i></a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6">
+                    <a class="list-group-item list-group-item-action list-group-item-dark text-center my-font">MongoDB
+                        <i class="fas fa-table my-font2"></i></a>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid">
+            <h2 id="github">My Github repositories</h2>
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4 card2">
+                    <p class="card-title mb-1">Github</p>
+                    <p class="text-center my-font mb-0">My code contributions</p>
+                    <i class="fab fa-github mx-auto d-block mb-2" style="font-size: 50px;text-align: center;"></i>
+                    <a href="https://github.com/diegojoel98" class="btn myBtn d-block" target="_blank">My Github
+                        Site</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- end main -->
+
+    <!-- footer -->
+    <footer>
+        <h2 id="about" class="bg-white">About me</h2>
+        <p class="font-italic font-medium text-center mt-3">"Every day, developing a website is more difficult, so
+            we
+            just
+            have to learn more and more and more ..."</p><br>
+        <div class="my-contact">
+            <div>
+                <a href="mailto:diegojoel98@gmail.com" class="links"><i class="fa fa-envelope"
+                        style="font-size: 30px;"></i></a>
+                <a href="mailto:diegojoel98@gmail.com" class="links">dgongoragamboa@gmail.com</a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/diego-joel-gongora-gamboa" class="links" target="_blank"><i
+                        class="fab fa-linkedin" style="font-size: 30px;"></i></a>
+                <a href="https://www.linkedin.com/in/diego-joel-gongora-gamboa" class="links" target="_blank">
+                    Linkedin</a>
+            </div>
+        </div>
     </footer>
-    </div> <!-- /container -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- end footer -->
+
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
-    <script src="js/vendor/bootstrap.min.js"></script>
-
-    <script src="js/main.js"></script>
+    <script src="public/js/vendor/bootstrap.min.js"></script>
+    <script src="public/js/main.js"></script> -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
+    <!-- <script>
             (function (b, o, i, l, e, r) {
                 b.GoogleAnalyticsObject = l; b[l] || (b[l] =
                     function () { (b[l].q = b[l].q || []).push(arguments) }); b[l].l = +new Date;
@@ -194,7 +202,7 @@
                 r.parentNode.insertBefore(e, r)
             }(window, document, 'script', 'ga'));
         ga('create', 'UA-XXXXX-X', 'auto'); ga('send', 'pageview');
-    </script>
+    </script> -->
 </body>
 
 </html>

@@ -29,6 +29,9 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
+    <!-- Aos animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="public/css/main.css">
 </head>
 
@@ -68,7 +71,7 @@
 
     <!-- main -->
     <main>
-        <h2 id="education">My Education</h2>
+        <h2 id="education" data-aos="fade-up">My Education</h2>
         <section class="container-fluid bg-gradient">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-4 card">
@@ -95,7 +98,7 @@
             </div>
         </section>
         <section class="container">
-            <h2 id="skills" class="text-center mt-5 mb-3">My professional skills</h2>
+            <h2 id="skills" class="text-center mt-5 mb-3" data-aos="fade-up">My professional skills</h2>
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-6">
                     <a class="list-group-item list-group-item-action list-group-item-warning text-center my-font">HTML
@@ -148,7 +151,7 @@
             </div>
         </section>
         <section class="container-fluid">
-            <h2 id="github">My Github repositories</h2>
+            <h2 id="github" data-aos="fade-up">My Github repositories</h2>
             <div class="row">
                 <div class="col-md-4"></div>
                 <div class="col-md-4 card2">
@@ -201,6 +204,10 @@
 
         gtag('config', 'G-HXT9HRWD32');
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
+<script>
+    AOS.init();
+</script>
 
 </html>

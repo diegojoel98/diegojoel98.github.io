@@ -28,12 +28,6 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="css/main.css">
 
-<!-- Marks the document as script-enhanced so CSS can collapse the mobile nav
-     into a burger. Inline and synchronous on purpose: js/main.js is deferred,
-     so waiting for it would flash the expanded nav on every mobile load.
-     Without JS the class never lands and the nav links stay visible. -->
-<script>document.documentElement.classList.add('js');</script>
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -101,6 +95,26 @@
   </div>
   <div class="nav__progress" id="progress" aria-hidden="true"></div>
 </header>
+
+<!-- CSS collapses the mobile nav behind the burger only when <html> carries
+     .js, so the marker and a working toggle must arrive together — marking the
+     document without wiring the button would hide every section link behind a
+     dead burger if js/main.js were blocked, 404'd or threw while initialising.
+     Hence both here, in one synchronous block, placed straight after the nav
+     it operates on: it needs that markup parsed, and it must run before the
+     rest of the page paints or mobile loads would flash an expanded nav.
+     js/main.js only adds the niceties on top (close on link click, Escape). -->
+<script>
+(function () {
+  var burger = document.getElementById('burger');
+  var links  = document.getElementById('navLinks');
+  if (!burger || !links) { return; }   // no toggle to offer, so stay expanded
+  document.documentElement.classList.add('js');
+  burger.addEventListener('click', function () {
+    burger.setAttribute('aria-expanded', links.classList.toggle('is-open') ? 'true' : 'false');
+  });
+}());
+</script>
 
 <main id="main">
 

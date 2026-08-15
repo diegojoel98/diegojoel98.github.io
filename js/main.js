@@ -342,15 +342,15 @@
      4. Mobile nav
      ══════════════════════════════════════════════════════════════════════ */
 
+  /* Opening the nav lives in the inline block in index.html, so that the
+     collapsed state and its toggle can never ship apart. What is left here is
+     purely additive: if this file never loads, the nav still opens and closes,
+     it just does not auto-close. */
   function closeNav() {
     links.classList.remove('is-open');
     burger.setAttribute('aria-expanded', 'false');
   }
 
-  burger.addEventListener('click', function () {
-    var open = links.classList.toggle('is-open');
-    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
-  });
   links.addEventListener('click', function (e) {
     if (e.target.tagName === 'A') { closeNav(); }
   });

@@ -1,111 +1,722 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>My Portfolio - Diego Gongora</title>
-        <meta name="description" content="Portfolio of Diego Joel Gongora Gamboa">
-        <meta name="author" content="Diego Joel Gongora Gamboa">
-        <meta name="keywords" content="Portfolio, Web Developer, HTML, CSS">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="icono.ico">     
-        <script src="https://kit.fontawesome.com/1329ffc21d.js" crossorigin="anonymous"></script>   
+<html lang="en" data-theme="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diego Gongora — Frontend Tech Lead</title>
 
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<meta name="description" content="Frontend Tech Lead with 6 years building and modernizing enterprise web applications with Vue, Angular and TypeScript. Specialized in frontend architecture, microfrontends, auth and observability. AWS Certified Cloud Practitioner. Based in Mérida, México.">
+<meta name="author" content="Diego Joel Gongora Gamboa">
+<meta name="keywords" content="Frontend Tech Lead, Vue, Angular, TypeScript, Microfrontends, Module Federation, AWS, Mérida, México, Frontend Architecture">
+<link rel="canonical" href="https://diegojoel98.github.io/">
 
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://diegojoel98.github.io/">
+<meta property="og:title" content="Diego Gongora — Frontend Tech Lead">
+<meta property="og:description" content="Frontend Tech Lead. Vue, Angular, TypeScript, microfrontends. AWS Certified Cloud Practitioner. Mérida, México.">
+<meta property="og:image" content="https://diegojoel98.github.io/img/diego-gongora.jpg">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="es_MX">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Diego Gongora — Frontend Tech Lead">
+<meta name="twitter:description" content="Frontend Tech Lead. Vue, Angular, TypeScript, microfrontends. AWS Certified Cloud Practitioner.">
+<meta name="twitter:image" content="https://diegojoel98.github.io/img/diego-gongora.jpg">
 
-        <!-- Popper JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<meta name="theme-color" content="#0c1211" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#fbfdfc" media="(prefers-color-scheme: light)">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="css/main.css">
 
-        <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Diego Joel Gongora Gamboa",
+  "alternateName": "Diego Gongora",
+  "jobTitle": "Frontend Tech Lead",
+  "url": "https://diegojoel98.github.io/",
+  "image": "https://diegojoel98.github.io/img/diego-gongora.jpg",
+  "email": "mailto:dgongoragamboa@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Mérida",
+    "addressRegion": "Yucatán",
+    "addressCountry": "MX"
+  },
+  "worksFor": { "@type": "Organization", "name": "The Palace Company" },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Universidad Autónoma de Yucatán" },
+    { "@type": "EducationalOrganization", "name": "Digital House" }
+  ],
+  "knowsLanguage": ["es-MX", "en"],
+  "knowsAbout": ["Frontend Architecture", "Microfrontends", "Vue.js", "Angular", "TypeScript", "Amazon Web Services", "Technical Leadership"],
+  "sameAs": [
+    "https://www.linkedin.com/in/diego-gongora-gamboa",
+    "https://github.com/diegojoel98",
+    "https://medium.com/@dgongoragamboa"
+  ]
+}
+</script>
+</head>
+<body>
 
-        <link rel="stylesheet" href="css/main.css">    
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <header class="bg-header">
-            <div class="container col-md-8">
-                <h1 class="text-green-900 pt-5 font-weight-bold">Diego Joel Gongora 
-                    <img src="img/diego-gongora.png" alt="Diego Gongora Profile" class="img-responsive right rounded">
-                </h1>
-                <p class="font-medium">Computer Science student, interested in Web Development, especially frontend development</p>                            
-            </div>
-            <div class="container d-none d-sm-block col-sm-10 col-md-8 col-lg-6 pt-5 mt-4">                            
-                <ul>
-                    <li class="list-inline list-inline-item list-unstyled"><a class="btn myBtn" href="#education">Education</a></li>
-                    <li class="list-inline list-inline-item list-unstyled"><a class="btn myBtn" href="#github">My Github</a></li>
-                    <li class="list-inline list-inline-item list-unstyled"><a class="btn myBtn" href="#about">About me</a></li>
-                </ul>                
-            </div>
-        </header>
-        <h2 id="education">My Education</h2>
-        <section class="container-fluid bg-gradient">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-4 card">
-                    <p class="card-title">Academic</p>
-                    <p class="desc">My academic training and my projects</p>
-                    <div class="btn-center">
-                        <a href="education.html" class="btn myBtn ">Go</a>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-4 card">
-                    <p class="card-title">Online Courses</p>
-                    <p class="desc">The online courses I have taken</p>
-                    <div class="btn-center">
-                        <a href="online-courses.html" class="btn myBtn">Go</a>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-4 card">
-                    <p class="card-title">Others activities</p>
-                    <p class="desc">Another activities that I have participated</p>
-                    <div class="btn-center">
-                        <a href="others.html" class="btn myBtn ">Go</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <h2 id="github">My Github repositories</h2>
-        <section class="container-fluid">
-            <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-4 card2">
-                    <p class="card-title">Github</p>
-                    <p class="desc">My code contributions</p>
-                    <a href="https://github.com/diegojoel98" class="btn myBtn" target="_blank">My Github Site</a>
-                    <i class="fab fa-github" style="font-size: 50px;margin-left: 40px;"></i>
-                </div>
-            </div>
-        </section>
-        <h2 id="about">About me</h2>
-        <footer>
-            <p class="font-italic font-medium text-center">"Every day, developing a website is more difficult, so we just have to learn more and more and more ..."</p><br>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <a href="mailto:diegojoel98@gmail.com" class="links ml-5 pl-4"><i class="fa fa-envelope" style="font-size: 30px;"></i> diegojoel98@gmail.com</a>
-                    </div>
-                    <div class="col-md-6">
-                        <a href="https://www.linkedin.com/in/diego-joel-gongora-gamboa-1b634b1ab" class="links ml-5 pl-4" target="_blank"><i class="fab fa-linkedin" style="font-size: 30px;"></i> Linkedin</a>
-                    </div>
-                </div>
-            </div>
-        
-        </footer>
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
 
-        <script src="js/vendor/bootstrap.min.js"></script>
+<header class="nav" id="siteNav">
+  <div class="wrap nav__in">
+    <a class="nav__brand" href="#top">
+      <span class="nav__mark" aria-hidden="true">DG</span>
+      <span class="nav__name">Diego Gongora</span>
+    </a>
 
-        <script src="js/main.js"></script>
-    
-    </body>
+    <nav class="nav__links" id="navLinks" aria-label="Sections">
+      <a href="#about"      data-i18n="nav.about">About</a>
+      <a href="#experience" data-i18n="nav.experience">Experience</a>
+      <a href="#skills"     data-i18n="nav.skills">Skills</a>
+      <a href="#writing"    data-i18n="nav.writing">Writing</a>
+      <a href="#projects"   data-i18n="nav.projects">Projects</a>
+      <a href="#education"  data-i18n="nav.education">Education</a>
+      <a href="#contact"    data-i18n="nav.contact">Contact</a>
+    </nav>
+
+    <div class="nav__tools">
+      <button type="button" class="tgl" id="langToggle" aria-label="Switch language">
+        <span class="tgl__opt is-on">EN</span><span class="tgl__sep">/</span><span class="tgl__opt">ES</span>
+      </button>
+      <button type="button" class="icobtn" id="themeToggle" aria-label="Switch theme">
+        <svg class="ico-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.6v2.4M12 19v2.4M2.6 12H5M19 12h2.4M5.4 5.4 7 7M17 17l1.6 1.6M18.6 5.4 17 7M7 17l-1.6 1.6"/></svg>
+        <svg class="ico-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.2 8.2 0 0 1 9.6 4a8.6 8.6 0 1 0 10.4 10.5Z"/></svg>
+      </button>
+      <button type="button" class="icobtn burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="nav__progress" id="progress" aria-hidden="true"></div>
+</header>
+
+<!-- CSS collapses the mobile nav behind the burger only when <html> carries
+     .js, so the marker and a working toggle must arrive together — marking the
+     document without wiring the button would hide every section link behind a
+     dead burger if js/main.js were blocked, 404'd or threw while initialising.
+     Hence both here, in one synchronous block, placed straight after the nav
+     it operates on: it needs that markup parsed, and it must run before the
+     rest of the page paints or mobile loads would flash an expanded nav.
+     js/main.js only adds the niceties on top (close on link click, Escape). -->
+<script>
+(function () {
+  var burger = document.getElementById('burger');
+  var links  = document.getElementById('navLinks');
+  if (!burger || !links) { return; }   // no toggle to offer, so stay expanded
+  document.documentElement.classList.add('js');
+  burger.addEventListener('click', function () {
+    burger.setAttribute('aria-expanded', links.classList.toggle('is-open') ? 'true' : 'false');
+  });
+}());
+</script>
+
+<main id="main">
+
+<!-- ══════════════ HERO ══════════════ -->
+<section class="hero" id="top">
+  <div class="wrap hero__in">
+    <div class="hero__body">
+      <p class="eyebrow">
+        <span class="dot" aria-hidden="true"></span>
+        <span data-i18n="hero.available">Mérida, Yucatán · México</span>
+      </p>
+
+      <h1 class="hero__h1">Diego <span class="grad">Gongora</span></h1>
+
+      <p class="hero__role">
+        <span data-i18n="hero.role">Frontend Tech Lead</span>
+        <span class="pipe">·</span>
+        <span data-i18n="hero.role2">Tech Writer</span>
+      </p>
+
+      <p class="hero__lede" data-i18n="hero.lede">
+        I build and modernize enterprise web applications with <b>Vue</b>, <b>Angular</b> and
+        <b>TypeScript</b> — hands-on with frontend architecture, microfrontends, admin platforms,
+        authentication and observability. I lead technical decisions, plan delivery, review code and
+        keep Product, Backend, QA and DevOps rowing in the same direction.
+      </p>
+
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#experience" data-i18n="hero.cta1">See my experience</a>
+        <a class="btn" href="mailto:dgongoragamboa@gmail.com" data-i18n="hero.cta2">Get in touch</a>
+      </div>
+
+      <ul class="hero__links">
+        <li><a href="https://www.linkedin.com/in/diego-gongora-gamboa" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0ZM3.2 21.5h3.5V8.9H3.2v12.6Zm6 0h3.5v-6.9c0-1.9 1.3-2.6 2.3-2.6s2 .8 2 2.6v6.9h3.5v-7.2c0-3.9-2.1-5.6-4.6-5.6-2 0-3 1.1-3.4 1.9V8.9H9.2c0 1 0 12.6 0 12.6Z"/></svg>LinkedIn</a></li>
+        <li><a href="https://github.com/diegojoel98" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.7a10.3 10.3 0 0 0-3.3 20c-.5.1-.7-.2-.7-.5v-1.9c-2.8.6-3.4-1.4-3.4-1.4-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.7-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c2-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7 1 .7 2v2.9c0 .3-.2.6-.7.5A10.3 10.3 0 0 0 12 1.7Z"/></svg>GitHub</a></li>
+        <li><a href="https://medium.com/@dgongoragamboa" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.8 7.1a.8.8 0 0 0-.3-.7L4.6 4.3V4h5.7l4.4 9.7L18.6 4H24v.3l-1.6 1.6a.5.5 0 0 0-.2.5v11.7a.5.5 0 0 0 .2.5l1.6 1.5v.3h-8v-.3l1.6-1.6c.2-.2.2-.2.2-.5V8.1l-4.6 11.6h-.6L5.4 8.1v7.8c0 .5.1.9.4 1.2l2.1 2.6v.3H2v-.3l2-2.6c.3-.3.5-.7.4-1.2V7.1Z"/></svg>Medium</a></li>
+      </ul>
+    </div>
+
+    <div class="hero__side">
+      <figure class="photo">
+        <img src="img/diego-gongora.jpg" alt="Diego Gongora" width="420" height="420" loading="eager" decoding="async" fetchpriority="high">
+      </figure>
+      <dl class="stats">
+        <div><dt data-i18n="stats.1t">Years of experience</dt><dd>6</dd></div>
+        <div><dt data-i18n="stats.2t">Leading frontend at</dt><dd class="dd--sm">The Palace Company</dd></div>
+        <div><dt data-i18n="stats.3t">Published articles</dt><dd>10<span class="plus">+</span></dd></div>
+        <div><dt data-i18n="stats.4t">Certified</dt><dd class="dd--sm">AWS Cloud Practitioner</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ ABOUT ══════════════ -->
+<section class="sec" id="about">
+  <div class="wrap">
+    <p class="sec__kicker" data-i18n="k.about">01 — About</p>
+    <h2 class="sec__h2" data-i18n="about.h2">Hands-on lead, not a bystander</h2>
+
+    <div class="about">
+      <div class="about__main">
+        <p data-i18n="about.p1">
+          I'm a Frontend Tech Lead with <b>6 years</b> developing and modernizing enterprise
+          web applications. My profile is deliberately hands-on: I write the code I ask others to
+          review, and I own the technical feasibility and the quality of what ships.
+        </p>
+        <p data-i18n="about.p2">
+          Day to day that means guiding product architecture and tooling decisions, taking part in
+          Discovery to shape possible solutions, and growing the engineers around me through code
+          review and high standards rather than process for its own sake.
+        </p>
+        <p data-i18n="about.p3">
+          I also write. I publish bilingual technical articles on Medium — <i>JavaScript in Plain
+          English</i> and <i>AWS in Plain English</i> — mostly about microfrontends, team workflow
+          and cloud fundamentals. Explaining a thing well is how I find out whether I actually
+          understand it.
+        </p>
+      </div>
+
+      <ul class="focus">
+        <li><h3 data-i18n="focus.1t">Frontend architecture</h3><p data-i18n="focus.1d">Structure that survives more than one team touching it.</p></li>
+        <li><h3 data-i18n="focus.2t">Microfrontends</h3><p data-i18n="focus.2d">Independent deploys and real modularity — without the chaos.</p></li>
+        <li><h3 data-i18n="focus.3t">Admin platforms</h3><p data-i18n="focus.3d">Dense, data-heavy internal tools people use all day.</p></li>
+        <li><h3 data-i18n="focus.4t">Auth &amp; observability</h3><p data-i18n="focus.4d">Knowing who did what, and what broke, before users report it.</p></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ EXPERIENCE ══════════════ -->
+<section class="sec sec--alt" id="experience">
+  <div class="wrap">
+    <p class="sec__kicker" data-i18n="k.exp">02 — Experience</p>
+    <h2 class="sec__h2" data-i18n="exp.h2">Where I've worked</h2>
+
+    <ol class="tl">
+
+      <!-- Palace ......................................................... -->
+      <li class="tl__co">
+        <div class="tl__head">
+          <h3 class="tl__coname">The Palace Company</h3>
+          <!-- Deliberately "since <date>" rather than a duration: this tenure
+               includes an ongoing role, so a hardcoded "2 yrs 6 mos" would be
+               wrong within a month. Past roles below can state durations. -->
+          <span class="tl__tenure"><span data-i18n="exp.palace.tenure">Since Mar 2024</span> · <span data-i18n="loc.mid">Mérida, Yucatán, México</span></span>
+        </div>
+
+        <div class="tl__role is-current">
+          <div class="tl__rhead">
+            <h4 data-i18n="exp.palace.r1.title">Frontend Tech Lead</h4>
+            <span class="tl__date">
+              <span data-i18n="exp.palace.r1.date">Dec 2025 — Present</span>
+              <em class="badge" data-i18n="badge.now">Current</em>
+            </span>
+          </div>
+          <ul class="tl__pts">
+            <li data-i18n="exp.palace.r1.b1">Guide implementation and own the decisions on product architecture, design and tooling.</li>
+            <li data-i18n="exp.palace.r1.b2">Lead technical and architectural decision-making across the frontend.</li>
+            <li data-i18n="exp.palace.r1.b3">Take an active part in Discovery and in defining candidate solutions.</li>
+            <li data-i18n="exp.palace.r1.b4">Accountable for technical feasibility and for the quality of the delivered product.</li>
+            <li data-i18n="exp.palace.r1.b5">Support engineers' technical growth and promote high-bar code standards.</li>
+          </ul>
+        </div>
+
+        <div class="tl__role">
+          <div class="tl__rhead">
+            <h4 data-i18n="exp.palace.r2.title">Front End Developer</h4>
+            <span class="tl__date" data-i18n="exp.palace.r2.date">Mar 2024 — Dec 2025 · 1 yr 10 mos</span>
+          </div>
+          <ul class="tl__pts">
+            <li data-i18n="exp.palace.r2.b1">Built web solutions that are usable, intuitive and responsive on the devices they were designed for.</li>
+            <li data-i18n="exp.palace.r2.b2">Implemented and maintained microfrontends to improve application scalability and modularity.</li>
+            <li data-i18n="exp.palace.r2.b3">Shipped high-performance applications with testable, reusable and efficient code.</li>
+            <li data-i18n="exp.palace.r2.b4">Requirements analysis and interface design; implemented responsive UI components.</li>
+            <li data-i18n="exp.palace.r2.b5">Wrote unit tests and worked on ergonomics and responsive design.</li>
+            <li data-i18n="exp.palace.r2.b6">Worked within agile methodologies throughout the development process.</li>
+          </ul>
+        </div>
+      </li>
+
+      <!-- Code & Jobs sits above enacment because LinkedIn orders by end date
+           and this ran to Apr 2024, a month past enacment. The two overlap:
+           this was freelance writing alongside the enacment role. -->
+      <li class="tl__co">
+        <div class="tl__head">
+          <h3 class="tl__coname">Code &amp; Jobs</h3>
+          <span class="tl__tenure"><span data-i18n="exp.cnj.date">Aug 2023 — Apr 2024 · 9 mos</span> · <span data-i18n="label.freelance">Freelance</span></span>
+        </div>
+        <div class="tl__role">
+          <div class="tl__rhead">
+            <h4 data-i18n="exp.cnj.title">Technical Writer</h4>
+          </div>
+          <ul class="tl__pts">
+            <li data-i18n="exp.cnj.b1">Wrote technical content for the Code &amp; Jobs platform blog.</li>
+          </ul>
+        </div>
+      </li>
+
+      <!-- enacment ....................................................... -->
+      <li class="tl__co">
+        <div class="tl__head">
+          <h3 class="tl__coname">enacment</h3>
+          <span class="tl__tenure"><span data-i18n="exp.enacment.date">Feb 2022 — Mar 2024 · 2 yrs 2 mos</span> · <span data-i18n="loc.mx">México</span></span>
+        </div>
+        <div class="tl__role">
+          <div class="tl__rhead">
+            <h4 data-i18n="exp.enacment.title">Software Developer</h4>
+          </div>
+          <ul class="tl__pts">
+            <li data-i18n="exp.enacment.b1">Developed bespoke high-performance web applications.</li>
+            <li data-i18n="exp.enacment.b2">Built hybrid mobile apps with Ionic and Capacitor.</li>
+            <li data-i18n="exp.enacment.b3">Turned functional requirements into app modules.</li>
+            <li data-i18n="exp.enacment.b4">Took part in continuous-improvement processes (Agile).</li>
+            <li data-i18n="exp.enacment.b5">Managed and maintained production applications.</li>
+            <li data-i18n="exp.enacment.b6">Backend work with Google Cloud Functions, AWS Lambda, and both relational and non-relational databases.</li>
+            <li data-i18n="exp.enacment.b7">Built reporting (Looker Studio, Power BI) and admin dashboards.</li>
+          </ul>
+        </div>
+      </li>
+
+      <!-- FitFunWear .................................................... -->
+      <li class="tl__co">
+        <div class="tl__head">
+          <h3 class="tl__coname">FitFunWear</h3>
+          <span class="tl__tenure"><span data-i18n="exp.ffw.date">Apr 2021 — Nov 2021 · 8 mos</span> · <span data-i18n="loc.mx">México</span></span>
+        </div>
+        <div class="tl__role">
+          <div class="tl__rhead">
+            <h4 data-i18n="exp.ffw.title">Jr Full Stack Web Developer</h4>
+          </div>
+          <ul class="tl__pts">
+            <li data-i18n="exp.ffw.b1">Planned and estimated the development of the site to be built.</li>
+            <li data-i18n="exp.ffw.b2">Translated the web design into web components.</li>
+            <li data-i18n="exp.ffw.b3">Analysed, designed and implemented a database system serving queries over 200+ products.</li>
+          </ul>
+          <p class="tl__stack"><span data-i18n="label.stack">Stack</span>: MySQL · Sequelize · Express · React · Node.js</p>
+        </div>
+      </li>
+
+      <!-- UADY .......................................................... -->
+      <li class="tl__co">
+        <div class="tl__head">
+          <h3 class="tl__coname" data-i18n="exp.uady.co">Faculty of Mathematics — UADY</h3>
+          <span class="tl__tenure"><span data-i18n="exp.uady.date">Aug 2019 — Feb 2020 · 7 mos</span> · <span data-i18n="loc.mid">Mérida, Yucatán, México</span></span>
+        </div>
+        <div class="tl__role">
+          <div class="tl__rhead">
+            <h4 data-i18n="exp.uady.title">Jr Front-end Developer</h4>
+          </div>
+          <ul class="tl__pts">
+            <li data-i18n="exp.uady.b1">Ran the website and social media for the Intelligent Systems Modelling &amp; Simulation academic group at the Faculty of Mathematics.</li>
+            <li data-i18n="exp.uady.b2">Designed and maintained the group's site on the Joomla CMS.</li>
+          </ul>
+          <p class="tl__stack"><a href="https://www.clir-lab.org/" target="_blank" rel="noopener" class="inlink">clir-lab.org ↗</a></p>
+        </div>
+      </li>
+
+    </ol>
+  </div>
+</section>
+
+<!-- ══════════════ SKILLS ══════════════ -->
+<section class="sec" id="skills">
+  <div class="wrap">
+    <p class="sec__kicker" data-i18n="k.skills">03 — Skills</p>
+    <h2 class="sec__h2" data-i18n="skills.h2">What I work with</h2>
+
+    <div class="grid-skills">
+      <article class="skl">
+        <h3 data-i18n="skills.g1">Frontend</h3>
+        <ul class="tags">
+          <li class="is-key">Vue 3</li><li class="is-key">Angular</li><li class="is-key">TypeScript</li>
+          <li>React</li><li>JavaScript (ES6+)</li><li>HTML5</li><li>CSS3 / Sass</li>
+          <li>Ionic + Capacitor</li>
+        </ul>
+      </article>
+
+      <article class="skl">
+        <h3 data-i18n="skills.g2">Architecture</h3>
+        <ul class="tags">
+          <li class="is-key" data-i18n="tag.mfe">Microfrontends</li>
+          <li>Module Federation</li>
+          <li data-i18n="tag.ds">Design systems</li>
+          <li data-i18n="tag.comp">Reusable components</li>
+          <li data-i18n="tag.auth">Authentication</li>
+          <li data-i18n="tag.obs">Observability</li>
+        </ul>
+      </article>
+
+      <article class="skl">
+        <h3 data-i18n="skills.g3">Backend &amp; data</h3>
+        <ul class="tags">
+          <li>Node.js</li><li>Express</li><li>REST APIs</li>
+          <li>AWS Lambda</li><li>Google Cloud Functions</li><li>MySQL</li><li>MongoDB</li>
+        </ul>
+      </article>
+
+      <article class="skl">
+        <h3 data-i18n="skills.g4">Cloud &amp; reporting</h3>
+        <ul class="tags">
+          <li class="is-key">AWS</li><li>Google Cloud</li><li>Looker Studio</li><li>Power BI</li>
+        </ul>
+      </article>
+
+      <article class="skl">
+        <h3 data-i18n="skills.g5">Quality &amp; process</h3>
+        <ul class="tags">
+          <li data-i18n="tag.unit">Unit testing</li>
+          <li data-i18n="tag.cr">Code review</li>
+          <li>Agile / Scrum</li>
+          <li>Git &amp; GitHub</li>
+          <li>CI/CD</li>
+        </ul>
+      </article>
+
+      <article class="skl">
+        <h3 data-i18n="skills.g6">Leadership</h3>
+        <ul class="tags">
+          <li class="is-key" data-i18n="tag.lead">Technical leadership</li>
+          <li data-i18n="tag.disc">Discovery</li>
+          <li data-i18n="tag.mentor">Mentoring</li>
+          <li data-i18n="tag.plan">Delivery planning</li>
+          <li data-i18n="tag.cross">Cross-team coordination</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ WRITING ══════════════ -->
+<section class="sec sec--alt" id="writing">
+  <div class="wrap">
+    <p class="sec__kicker" data-i18n="k.writing">04 — Writing</p>
+    <h2 class="sec__h2" data-i18n="writing.h2">Articles I've published</h2>
+    <p class="sec__note" data-i18n="writing.note">I write in English and Spanish. Each piece below links to both versions.</p>
+
+    <ul class="posts">
+      <li class="post">
+        <p class="post__meta"><time datetime="2026-02-03" data-i18n="post.1.date">Feb 2026</time><span class="post__pub">JavaScript in Plain English</span></p>
+        <h3 class="post__t" data-i18n="post.1.t">Draft PRs + Review Bots: a simple flow to cut noise and rework</h3>
+        <p class="post__d" data-i18n="post.1.d">A lightweight review flow that stops half-finished pull requests from eating your team's attention.</p>
+        <p class="post__links">
+          <a href="https://javascript.plainenglish.io/draft-prs-review-bots-a-simple-flow-to-cut-noise-and-rework-5723510d58c4" target="_blank" rel="noopener">English ↗</a>
+          <a href="https://medium.com/@dgongoragamboa/draft-prs-review-bots-un-flujo-simple-para-reducir-ruido-y-retrabajo-efd35dff33e6" target="_blank" rel="noopener">Español ↗</a>
+        </p>
+      </li>
+
+      <li class="post">
+        <p class="post__meta"><time datetime="2025-12-28" data-i18n="post.2.date">Dec 2025</time><span class="post__pub">JavaScript in Plain English</span></p>
+        <h3 class="post__t" data-i18n="post.2.t">Microfrontends Without Chaos: 5 Rules That Actually Work in Real Teams</h3>
+        <p class="post__d" data-i18n="post.2.d">The rules I'd want in place before splitting a frontend across teams — learned the hard way.</p>
+        <p class="post__links">
+          <a href="https://javascript.plainenglish.io/microfrontends-without-chaos-5-rules-that-actually-work-in-real-teams-349b77d8992e" target="_blank" rel="noopener">English ↗</a>
+          <a href="https://medium.com/@dgongoragamboa/microfrontends-sin-caos-5-reglas-que-s%C3%AD-funcionan-en-equipos-reales-82f0d6edc11f" target="_blank" rel="noopener">Español ↗</a>
+        </p>
+      </li>
+
+      <li class="post">
+        <p class="post__meta"><time datetime="2025-09-15" data-i18n="post.3.date">Sep 2025</time><span class="post__pub">AWS in Plain English</span></p>
+        <h3 class="post__t" data-i18n="post.3.t">Study Guide for the AWS Certified Cloud Practitioner Certification</h3>
+        <p class="post__d" data-i18n="post.3.d">The study plan I used to pass the exam, written up while it was still fresh.</p>
+        <p class="post__links">
+          <a href="https://aws.plainenglish.io/study-guide-for-the-aws-certified-cloud-practitioner-certification-eca5f1d69b5f" target="_blank" rel="noopener">English ↗</a>
+          <a href="https://medium.com/@dgongoragamboa/gu%C3%ADa-de-estudio-para-la-certificaci%C3%B3n-aws-certified-cloud-practitioner-d1ad239fd0b8" target="_blank" rel="noopener">Español ↗</a>
+        </p>
+      </li>
+
+      <li class="post">
+        <p class="post__meta"><time datetime="2025-03-18" data-i18n="post.4.date">Mar 2025</time><span class="post__pub">Medium</span></p>
+        <h3 class="post__t" data-i18n="post.4.t">How to Install WordPress Locally and Build Sites on Your Own Machine</h3>
+        <p class="post__d" data-i18n="post.4.d">A practical local setup for building and breaking WordPress sites safely.</p>
+        <p class="post__links">
+          <a href="https://medium.com/@dgongoragamboa/how-to-install-wordpress-on-your-computer-and-create-websites-locally-a38cc6bdf377" target="_blank" rel="noopener">English ↗</a>
+          <a href="https://medium.com/@dgongoragamboa/c%C3%B3mo-instalar-wordpress-en-tu-computadora-y-crear-sitios-web-localmente-580071cc785a" target="_blank" rel="noopener">Español ↗</a>
+        </p>
+      </li>
+
+      <li class="post">
+        <p class="post__meta"><time datetime="2024-12-08" data-i18n="post.5.date">Dec 2024</time><span class="post__pub">Medium</span></p>
+        <h3 class="post__t" data-i18n="post.5.t">What is a Microfrontend and Why You Should Know About It</h3>
+        <p class="post__d" data-i18n="post.5.d">The introduction to microfrontends I wish I'd read first.</p>
+        <p class="post__links">
+          <a href="https://medium.com/@dgongoragamboa/what-is-microfrontend-and-why-you-should-know-about-it-36e812ec9ecc" target="_blank" rel="noopener">English ↗</a>
+          <a href="https://medium.com/@dgongoragamboa/qu%C3%A9-es-microfrontend-y-por-qu%C3%A9-debes-conocerlo-0c3214c3c141" target="_blank" rel="noopener">Español ↗</a>
+        </p>
+      </li>
+    </ul>
+
+    <p class="more"><a class="btn btn--ghost" href="https://medium.com/@dgongoragamboa" target="_blank" rel="noopener" data-i18n="writing.all">All articles on Medium ↗</a></p>
+  </div>
+</section>
+
+<!-- ══════════════ PROJECTS ══════════════ -->
+<section class="sec" id="projects">
+  <div class="wrap">
+    <p class="sec__kicker" data-i18n="k.projects">05 — Projects</p>
+    <h2 class="sec__h2" data-i18n="projects.h2">Things I've built in the open</h2>
+    <p class="sec__note" data-i18n="projects.note">My professional work lives in private repositories. These are personal and academic projects.</p>
+
+    <div class="grid-proj">
+      <article class="proj">
+        <h3 data-i18n="proj.1t">CLIR Lab website</h3>
+        <p data-i18n="proj.1d">Site for the Computational Learning and Imaging Research group, built and maintained on Joomla. Live in production.</p>
+        <ul class="tags tags--sm"><li>Joomla</li><li>CMS</li><li>PHP</li></ul>
+        <p class="proj__go"><a href="https://www.clir-lab.org/" target="_blank" rel="noopener" data-i18n="proj.visit">Visit site ↗</a></p>
+      </article>
+
+      <article class="proj">
+        <h3 data-i18n="proj.2t">FitFunWear</h3>
+        <p data-i18n="proj.2d">Full-stack e-commerce built with a team of three: catalogue of 200+ products over a relational schema, server-rendered views and an admin area.</p>
+        <ul class="tags tags--sm"><li>Node.js</li><li>Express</li><li>MySQL</li><li>React</li></ul>
+        <p class="proj__go"><a href="https://github.com/diegojoel98/grupo_4_fit-fun-wear" target="_blank" rel="noopener" data-i18n="proj.code">View code ↗</a></p>
+      </article>
+
+      <article class="proj">
+        <h3 data-i18n="proj.3t">Manage Clients</h3>
+        <p data-i18n="proj.3d">CRUD client-management app built to explore the Vue 3 Composition API end to end.</p>
+        <ul class="tags tags--sm"><li>Vue 3</li><li>Composition API</li></ul>
+        <p class="proj__go"><a href="https://github.com/diegojoel98/manage-clients" target="_blank" rel="noopener" data-i18n="proj.code">View code ↗</a></p>
+      </article>
+
+      <article class="proj">
+        <h3 data-i18n="proj.4t">Marvel App</h3>
+        <p data-i18n="proj.4d">Marvel character browser with its own Node.js API layer in front of the public Marvel API.</p>
+        <ul class="tags tags--sm"><li>JavaScript</li><li>Node.js</li><li>REST</li></ul>
+        <p class="proj__go">
+          <a href="https://github.com/diegojoel98/marvel-app" target="_blank" rel="noopener" data-i18n="proj.front">Frontend ↗</a>
+          <a href="https://github.com/diegojoel98/backend-marvel-app" target="_blank" rel="noopener" data-i18n="proj.back">Backend ↗</a>
+        </p>
+      </article>
+
+      <article class="proj">
+        <h3 data-i18n="proj.5t">COVID-19 data app</h3>
+        <p data-i18n="proj.5d">Dashboard consuming a public pandemic dataset and charting it by country.</p>
+        <ul class="tags tags--sm"><li>JavaScript</li><li>REST</li><li>Charts</li></ul>
+        <p class="proj__go"><a href="https://github.com/diegojoel98/covid-data-webapp" target="_blank" rel="noopener" data-i18n="proj.code">View code ↗</a></p>
+      </article>
+
+      <article class="proj">
+        <h3 data-i18n="proj.6t">Blog: Angular + Node API</h3>
+        <p data-i18n="proj.6d">Angular frontend against a RESTful Node.js API — an early full-stack exercise in separating the two cleanly.</p>
+        <ul class="tags tags--sm"><li>Angular</li><li>TypeScript</li><li>Node.js</li></ul>
+        <p class="proj__go">
+          <a href="https://github.com/diegojoel98/blog-with-angular" target="_blank" rel="noopener" data-i18n="proj.front">Frontend ↗</a>
+          <a href="https://github.com/diegojoel98/apiRESTful-with-node-backend-blog" target="_blank" rel="noopener" data-i18n="proj.back">Backend ↗</a>
+        </p>
+      </article>
+    </div>
+
+    <p class="more"><a class="btn btn--ghost" href="https://github.com/diegojoel98?tab=repositories" target="_blank" rel="noopener" data-i18n="projects.all">All repositories on GitHub ↗</a></p>
+  </div>
+</section>
+
+<!-- ══════════════ EDUCATION ══════════════ -->
+<section class="sec sec--alt" id="education">
+  <div class="wrap">
+    <p class="sec__kicker" data-i18n="k.edu">06 — Education</p>
+    <h2 class="sec__h2" data-i18n="edu.h2">Education, certifications &amp; languages</h2>
+
+    <div class="edu">
+      <div class="edu__col">
+        <h3 class="edu__h3" data-i18n="edu.formal">Formal education</h3>
+        <ul class="edulist">
+          <li>
+            <h4 data-i18n="edu.1t">BSc, Computer Science</h4>
+            <p class="edulist__org">Universidad Autónoma de Yucatán</p>
+            <p class="edulist__when">2017 — 2021</p>
+          </li>
+          <li>
+            <h4 data-i18n="edu.2t">Full Stack Web Development</h4>
+            <p class="edulist__org">Digital House</p>
+            <p class="edulist__when" data-i18n="edu.2w">Apr 2021 — Oct 2021</p>
+            <p class="certs__meta">
+              <a href="./img/docs/programacion-full-stack-dh-diego-gongora.pdf" target="_blank" rel="noopener" data-i18n="cert.link">certificate ↗</a>
+            </p>
+          </li>
+          <li>
+            <h4 data-i18n="edu.3t">English language &amp; literature</h4>
+            <p class="edulist__org">Interlingua</p>
+            <p class="edulist__when" data-i18n="edu.3w">Oct 2022 — Aug 2024</p>
+          </li>
+        </ul>
+
+        <h3 class="edu__h3" data-i18n="edu.langs">Languages</h3>
+        <ul class="langs">
+          <li><span data-i18n="lang.es">Spanish</span><em data-i18n="lang.es.lvl">Native</em></li>
+          <li><span data-i18n="lang.en">English</span><em data-i18n="lang.en.lvl">Professional working proficiency</em>
+            <a class="langs__cert" href="./img/others/LevelEnglish.pdf" target="_blank" rel="noopener" data-i18n="lang.en.cert">CIL UADY certificate ↗</a></li>
+        </ul>
+      </div>
+
+      <div class="edu__col">
+        <h3 class="edu__h3" data-i18n="edu.certs">Certifications</h3>
+        <ul class="certs">
+          <li class="is-key">
+            <h4>AWS Certified Cloud Practitioner</h4>
+            <p>Amazon Web Services</p>
+            <p class="certs__meta">
+              <span data-i18n="cert.aws.date">Issued Jul 2025 · valid to Jul 2028</span> ·
+              <a href="https://www.credly.com/badges/a45cb8ca-2711-4483-b306-28056cd82fa7" target="_blank" rel="noopener" data-i18n="cert.credly">Verify on Credly ↗</a>
+            </p>
+          </li>
+          <li>
+            <h4>Python Essentials 1</h4>
+            <p>Cisco Networking Academy</p>
+            <p class="certs__meta">
+              <span data-i18n="cert.py.date">Issued Aug 2022</span> ·
+              <a href="https://www.credly.com/badges/cce6e8c3-ef8c-43da-90cc-6de6df131cb1" target="_blank" rel="noopener" data-i18n="cert.credly">Verify on Credly ↗</a>
+            </p>
+          </li>
+          <li>
+            <h4>CCNA: Enterprise Networking, Security &amp; Automation</h4>
+            <p>Cisco Networking Academy</p>
+            <p class="certs__meta">
+              <span data-i18n="cert.ensa.date">Issued Feb 2022</span> ·
+              <a href="https://www.credly.com/badges/403fcf55-2de9-47a1-9c74-8853a8aa3238" target="_blank" rel="noopener" data-i18n="cert.credly">Verify on Credly ↗</a> ·
+              <a href="./img/others/DiegoGongora-Redes-Empresariales.pdf" target="_blank" rel="noopener" data-i18n="cert.link">certificate ↗</a>
+            </p>
+          </li>
+          <li>
+            <h4>Introduction to IoT</h4>
+            <p>Cisco Networking Academy</p>
+            <p class="certs__meta">
+              <span data-i18n="cert.iot.date">Issued Aug 2020</span> ·
+              <a href="https://www.credly.com/badges/80e4b2ec-8829-4c83-8c27-62afc31ab4f1" target="_blank" rel="noopener" data-i18n="cert.credly">Verify on Credly ↗</a>
+            </p>
+          </li>
+          <li>
+            <h4>CCNA: Introduction to Networks</h4>
+            <p>Cisco Networking Academy</p>
+            <p class="certs__meta">
+              <span data-i18n="cert.net.date">Issued Jul 2020</span> ·
+              <a href="https://www.credly.com/badges/efd01d71-0be3-4f0e-b3eb-ef1c000231b5" target="_blank" rel="noopener" data-i18n="cert.credly">Verify on Credly ↗</a>
+            </p>
+          </li>
+          <li>
+            <h4>Introduction to Cybersecurity</h4>
+            <p>Cisco Networking Academy</p>
+            <p class="certs__meta">
+              <span data-i18n="cert.cyber.date">Issued Jun 2020</span> ·
+              <a href="https://www.credly.com/badges/a929b09a-beeb-42fc-98c4-37e7efe6feb2" target="_blank" rel="noopener" data-i18n="cert.credly">Verify on Credly ↗</a>
+            </p>
+          </li>
+          <li>
+            <h4>IT Essentials</h4>
+            <p>Cisco Networking Academy</p>
+            <p class="certs__meta">
+              <a href="./img/others/IT_Cisco.pdf" target="_blank" rel="noopener" data-i18n="cert.link">certificate ↗</a> ·
+              <a href="./img/others/IT-letter.pdf" target="_blank" rel="noopener" data-i18n="cert.letter">letter ↗</a>
+            </p>
+          </li>
+          <li>
+            <h4 data-i18n="cert.web">Introduction to Web Development I &amp; II</h4>
+            <p>Google Activate</p>
+            <p class="certs__meta">
+              <a href="./img/docs/google-activate-desaWebI.pdf" target="_blank" rel="noopener" data-i18n="cert.part1">certificate I ↗</a> ·
+              <a href="./img/docs/google-activate-desaWebII.pdf" target="_blank" rel="noopener" data-i18n="cert.part2">certificate II ↗</a>
+            </p>
+          </li>
+          <li>
+            <h4 data-i18n="cert.soft">Key professional skills &amp; competencies</h4>
+            <p data-i18n="cert.soft.org">Santander Universia · ANUIES · Fundación Educación Superior-Empresa</p>
+            <p class="certs__meta">
+              <a href="./img/docs/Habilidades_profesionales.pdf" target="_blank" rel="noopener" data-i18n="cert.link">certificate ↗</a>
+            </p>
+          </li>
+        </ul>
+
+        <p class="certs__all">
+          <a href="https://www.credly.com/users/diego-gongora/badges" target="_blank" rel="noopener" data-i18n="credly.profile">All my badges on Credly ↗</a>
+        </p>
+
+        <details class="disc">
+          <summary data-i18n="edu.more">Volunteering, workshops &amp; earlier certificates</summary>
+          <ul class="misc">
+            <li><b data-i18n="misc.1t">Workshop instructor — Festival Matemático</b>
+              <span>Centro de Investigación en Matemáticas (CIMAT) ·
+                <a href="./img/others/CIMAT.pdf" target="_blank" rel="noopener" data-i18n="cert.link">certificate ↗</a></span></li>
+            <li><b data-i18n="misc.2t">Workshop instructor — Science &amp; Technology Fair</b>
+              <span>UNAM, Mérida campus ·
+                <a href="./img/others/ParticipacionUNAM.pdf" target="_blank" rel="noopener" data-i18n="cert.link">certificate ↗</a></span></li>
+            <li><b data-i18n="misc.3t">Mathematics workshop instructor</b>
+              <span data-i18n="misc.3o">U.S. Consulate &amp; Mérida City Council ·
+                <a href="./img/others/ConsulUSA.pdf" target="_blank" rel="noopener">certificate ↗</a></span></li>
+            <li><b data-i18n="misc.4t">Student member, Academic Council</b>
+              <span>Universidad Autónoma de Yucatán ·
+                <a href="./img/others/MemberUADY.pdf" target="_blank" rel="noopener" data-i18n="cert.link">certificate ↗</a></span></li>
+            <li><b data-i18n="misc.5t">Networking Academy Learn-A-Thon 2020</b>
+              <span>Cisco ·
+                <a href="https://www.credly.com/badges/52bff73c-f55d-466e-862c-9ccc3a301517" target="_blank" rel="noopener" data-i18n="badge.link">badge ↗</a></span></li>
+            <li><b data-i18n="misc.6t">Professional internship</b>
+              <span>Universidad Autónoma de Yucatán ·
+                <a href="./img/others/Practicas.pdf" target="_blank" rel="noopener" data-i18n="cert.link">certificate ↗</a></span></li>
+            <li><b data-i18n="misc.7t">Git &amp; GitHub fundamentals · Bootstrap · HTML &amp; CSS · Building web pages</b>
+              <span>Devcode ·
+                <a href="./img/docs/certificado-PDF-Github.pdf" target="_blank" rel="noopener">Git ↗</a> ·
+                <a href="./img/docs/certificado-PDF-Bootstrap3.pdf" target="_blank" rel="noopener">Bootstrap ↗</a> ·
+                <a href="./img/docs/certificado-PDF-HTML_CSS.pdf" target="_blank" rel="noopener">HTML/CSS ↗</a> ·
+                <a href="./img/docs/certificado-PDF-HTML.pdf" target="_blank" rel="noopener" data-i18n="misc.7l">web pages ↗</a></span></li>
+          </ul>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ CONTACT ══════════════ -->
+<section class="sec contact" id="contact">
+  <div class="wrap">
+    <p class="sec__kicker" data-i18n="k.contact">07 — Contact</p>
+    <h2 class="sec__h2 contact__h2" data-i18n="contact.h2">Let's talk</h2>
+    <p class="contact__lede" data-i18n="contact.lede">
+      Open to conversations about frontend architecture, technical leadership, or an interesting
+      problem you're stuck on. The fastest way to reach me is email.
+    </p>
+
+    <a class="mailto" href="mailto:dgongoragamboa@gmail.com">dgongoragamboa@gmail.com</a>
+
+    <ul class="contact__links">
+      <li><a href="https://www.linkedin.com/in/diego-gongora-gamboa" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+      <li><a href="https://github.com/diegojoel98" target="_blank" rel="noopener">GitHub ↗</a></li>
+      <li><a href="https://medium.com/@dgongoragamboa" target="_blank" rel="noopener">Medium ↗</a></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <p>© <span id="year">2026</span> Diego Joel Gongora Gamboa · <span data-i18n="foot.loc">Mérida, Yucatán, México</span></p>
+    <p class="foot__meta">
+      <button type="button" class="linkish" id="printBtn" data-i18n="foot.print">Save as PDF</button>
+      <span class="pipe">·</span>
+      <a href="https://github.com/diegojoel98/diegojoel98.github.io" target="_blank" rel="noopener" data-i18n="foot.src">Source</a>
+    </p>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
 </html>

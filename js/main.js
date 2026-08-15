@@ -225,6 +225,27 @@
     es: 'Diego Gongora — Frontend Tech Lead'
   };
 
+  /* Accessible names for controls that have no visible text. These are not in
+     the data-i18n dictionary because they live in attributes, not content —
+     without them a Spanish screen-reader user hears English labels on a
+     document declared as lang="es-MX". */
+  var A11Y = {
+    en: {
+      nav: 'Sections',
+      menu: 'Menu',
+      lang: 'Switch to Spanish',
+      toDark: 'Switch to dark theme',
+      toLight: 'Switch to light theme'
+    },
+    es: {
+      nav: 'Secciones',
+      menu: 'Menú',
+      lang: 'Cambiar a inglés',
+      toDark: 'Cambiar a tema oscuro',
+      toLight: 'Cambiar a tema claro'
+    }
+  };
+
   var $  = function (s, c) { return (c || document).querySelector(s); };
   var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
   var store = {
@@ -235,12 +256,35 @@
   /* ══════════════════════════════════════════════════════════════════════
      2. Language
      ══════════════════════════════════════════════════════════════════════ */
+  /* Looked up before applyLang runs — it labels all of them. */
+  var langBtn  = $('#langToggle');
+  var themeBtn = $('#themeToggle');
+  var burger   = $('#burger');
+  var links    = $('#navLinks');
+
   var nodes = $$('[data-i18n]');
   var EN = {};                                   // cache of the shipped English
 
   nodes.forEach(function (el) {
     EN[el.getAttribute('data-i18n')] = el.innerHTML;
   });
+
+  function currentLang() {
+    return document.documentElement.lang.indexOf('es') === 0 ? 'es' : 'en';
+  }
+
+  function currentTheme() {
+    var set = document.documentElement.getAttribute('data-theme');
+    if (set) { return set; }
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+
+  /* The theme button's label depends on both the language and which way the
+     toggle will go, so it is derived rather than set in one place. */
+  function labelTheme() {
+    var l = A11Y[currentLang()];
+    themeBtn.setAttribute('aria-label', currentTheme() === 'dark' ? l.toLight : l.toDark);
+  }
 
   function applyLang(lang) {
     var dict = lang === 'es' ? ES : EN;
@@ -259,48 +303,44 @@
       opts[0].classList.toggle('is-on', lang === 'en');
       opts[1].classList.toggle('is-on', lang === 'es');
     }
-    langBtn.setAttribute('aria-label', lang === 'es' ? 'Cambiar a inglés' : 'Switch to Spanish');
+
+    var l = A11Y[lang];
+    langBtn.setAttribute('aria-label', l.lang);
+    links.setAttribute('aria-label', l.nav);
+    burger.setAttribute('aria-label', l.menu);
+    labelTheme();
+
     store.set('lang', lang);
   }
 
-  var langBtn = $('#langToggle');
   var initialLang = store.get('lang');
   if (!initialLang) {
     initialLang = /^es\b/i.test(navigator.language || '') ? 'es' : 'en';
   }
-  applyLang(initialLang);
-
-  langBtn.addEventListener('click', function () {
-    applyLang(document.documentElement.lang.indexOf('es') === 0 ? 'en' : 'es');
-  });
 
   /* ══════════════════════════════════════════════════════════════════════
      3. Theme
      ══════════════════════════════════════════════════════════════════════ */
-  var themeBtn = $('#themeToggle');
   var savedTheme = store.get('theme');
   if (savedTheme === 'dark' || savedTheme === 'light') {
     document.documentElement.setAttribute('data-theme', savedTheme);
   }
 
-  function currentTheme() {
-    var set = document.documentElement.getAttribute('data-theme');
-    if (set) { return set; }
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-  }
+  applyLang(initialLang);          // after the theme, so labelTheme() is right
+
+  langBtn.addEventListener('click', function () {
+    applyLang(currentLang() === 'es' ? 'en' : 'es');
+  });
 
   themeBtn.addEventListener('click', function () {
-    var next = currentTheme() === 'dark' ? 'light' : 'dark';
-    document.documentElement.setAttribute('data-theme', next);
-    store.set('theme', next);
-    themeBtn.setAttribute('aria-label', next === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
+    document.documentElement.setAttribute('data-theme', currentTheme() === 'dark' ? 'light' : 'dark');
+    store.set('theme', currentTheme());
+    labelTheme();
   });
 
   /* ══════════════════════════════════════════════════════════════════════
      4. Mobile nav
      ══════════════════════════════════════════════════════════════════════ */
-  var burger = $('#burger');
-  var links  = $('#navLinks');
 
   function closeNav() {
     links.classList.remove('is-open');

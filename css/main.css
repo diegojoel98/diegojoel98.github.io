@@ -200,18 +200,33 @@ p { text-wrap: pretty; }
 }
 
 @media (max-width: 860px) {
-  .burger { display: grid; }
+  /* Baseline, no JavaScript: the links wrap onto a second row and stay
+     visible. The burger does nothing without JS, so it stays hidden —
+     collapsing the nav here would strand mobile users with no navigation. */
+  .nav__in { flex-wrap: wrap; }
   .nav__links {
+    order: 3;                 /* after brand and tools, so it gets its own row */
+    width: 100%;
+    margin-left: 0;
+    flex-wrap: wrap;
+    padding-bottom: .55rem;
+  }
+  :root:not(.js) { scroll-padding-top: 124px; }   /* taller nav, taller offset */
+
+  /* Enhanced: the inline script in <head> added .js, so collapse into a
+     burger-driven dropdown. */
+  :root.js .burger { display: grid; }
+  :root.js .nav__links {
     position: absolute; inset: 68px 0 auto;
+    width: auto; padding: .6rem var(--gut) 1.1rem;
     display: grid; gap: .1rem;
-    padding: .6rem var(--gut) 1.1rem;
     background: var(--bg);
     border-bottom: 1px solid var(--border);
     box-shadow: var(--shadow);
     transform-origin: top;
     transition: opacity .2s var(--ease), transform .2s var(--ease), visibility .2s;
   }
-  .nav__links:not(.is-open) { opacity: 0; visibility: hidden; transform: translateY(-8px); }
+  :root.js .nav__links:not(.is-open) { opacity: 0; visibility: hidden; transform: translateY(-8px); }
   .nav__links a { padding: .65rem .7rem; font-size: 1rem; }
 }
 

@@ -28,6 +28,12 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="css/main.css">
 
+<!-- Marks the document as script-enhanced so CSS can collapse the mobile nav
+     into a burger. Inline and synchronous on purpose: js/main.js is deferred,
+     so waiting for it would flash the expanded nav on every mobile load.
+     Without JS the class never lands and the nav links stay visible. -->
+<script>document.documentElement.classList.add('js');</script>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

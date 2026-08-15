@@ -39,15 +39,14 @@
     'k.about': '01 — Perfil',
     'about.h2': 'Líder hands-on, no espectador',
     'about.p1': 'Soy Frontend Tech Lead con <b>6 años</b> desarrollando y modernizando ' +
-      'aplicaciones web empresariales. Mi perfil es deliberadamente hands-on: escribo el código que ' +
-      'después pido revisar, y soy responsable de la factibilidad técnica y de la calidad de lo que se entrega.',
+      'aplicaciones web empresariales. Sigo escribiendo el código que después pido revisar, y ' +
+      'respondo por la factibilidad técnica y la calidad de lo que se entrega.',
     'about.p2': 'En el día a día eso significa guiar las decisiones de arquitectura, diseño y ' +
-      'herramientas del producto, participar activamente en el Discovery para definir posibles ' +
-      'soluciones, y acompañar el crecimiento técnico del equipo con code review y estándares altos ' +
-      'más que con proceso por el proceso mismo.',
-    'about.p3': 'También escribo. Publico artículos técnicos bilingües en Medium — <i>JavaScript in ' +
-      'Plain English</i> y <i>AWS in Plain English</i> — sobre microfrontends, flujo de trabajo en ' +
-      'equipo y fundamentos de cloud. Explicar algo bien es como compruebo si de verdad lo entiendo.',
+      'herramientas del producto, definir soluciones técnicas junto con Producto y Backend, y ' +
+      'acompañar el crecimiento del equipo con code review y estándares altos, no con más proceso.',
+    'about.p3': 'Publico artículos técnicos en Medium, en español e inglés, sobre microfrontends, ' +
+      'flujo de trabajo en equipo y fundamentos de cloud. Explicar algo bien es como compruebo si ' +
+      'de verdad lo entiendo.',
 
     'focus.1t': 'Arquitectura frontend',
     'focus.1d': 'Estructura que sobrevive a más de un equipo tocándola.',

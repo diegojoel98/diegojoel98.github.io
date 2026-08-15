@@ -624,6 +624,41 @@ p { text-wrap: pretty; }
   .nav, .hero__cta, .hero__links, .more, .foot__meta,
   .contact__links, .burger, .nav__progress { display: none !important; }
   .hero::before { display: none; }
+
+  /* Anything whose visual IS a painted background vanishes once the browser
+     drops background graphics (Chrome's default in the print dialog). Rebuild
+     those from text and borders, which always print.
+     Most other backgrounds here resolve to #fff in print, so losing them
+     changes nothing — these three are the ones that lose actual content. */
+
+  /* The gradient is clipped to the text and the fill is transparent, so with
+     no background painted the surname simply disappears from the heading. */
+  .grad {
+    background: none;
+    -webkit-background-clip: border-box; background-clip: border-box;
+    -webkit-text-fill-color: var(--text); color: var(--text);
+  }
+
+  /* Bullet dots are 5px background circles; without them every
+     responsibility reads as a run-on indented line. */
+  .tl__pts li { padding-left: .95rem; }
+  .tl__pts li::before {
+    content: "\2022";
+    top: 0; left: 0;
+    width: auto; height: auto;
+    background: none; border-radius: 0; opacity: 1;
+    color: var(--text); line-height: inherit;
+  }
+
+  /* Timeline nodes are background circles — give them a printable border. */
+  .tl__co::before,
+  .tl__co:first-child::before {
+    background: none;
+    border-color: var(--text);
+    box-shadow: none;
+  }
+
+  .dot { display: none; }   /* decorative status dot, nothing to print */
   body { font-size: 10.5pt; line-height: 1.45; }
   .sec { padding: 1.1rem 0; break-inside: avoid; }
   .sec--alt { border: 0; }

@@ -547,6 +547,7 @@ p { text-wrap: pretty; }
 }
 .langs span { font-weight: 600; font-size: .98rem; }
 .langs em { font-style: normal; font-size: .855rem; color: var(--muted); }
+.langs__cert { font-family: var(--mono); font-size: .78rem; }
 
 .disc { margin-top: 1.6rem; border-top: 1px solid var(--border); padding-top: 1.1rem; }
 .disc summary {

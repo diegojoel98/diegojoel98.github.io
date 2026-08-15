@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64"
+     role="img" aria-labelledby="lt ld">
+  <title id="lt">Diego Gongora</title>
+  <desc id="ld">Monogram of the letters D and G in white on a green rounded tile.</desc>
+
+  <!-- Geometry is hand-plotted rather than set in a typeface: the mark has to
+       render identically everywhere, including as a favicon, where no font is
+       guaranteed. Stroke weight is held to 4.5 against a 21.5-unit cap height
+       so both counters stay open — at 5 they closed into slits. -->
+  <defs>
+    <linearGradient id="dgTile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14b8a6"/>
+      <stop offset="1" stop-color="#0b6f5f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="64" height="64" rx="15" fill="url(#dgTile)"/>
+
+  <!-- The pair is tightened and scaled about the centre so the ink clears the
+       rounded corners: at full size it left only 7u of side padding against
+       19u above and below, which read as cramped. Measured, not eyeballed. -->
+  <g transform="translate(33.4 32) scale(0.93) translate(-32 -32)"
+     fill="none" stroke="#f8fdfb" stroke-width="4.5"
+     stroke-linecap="round" stroke-linejoin="round">
+    <!-- D: flat stem plus a half-ellipse bowl -->
+    <path d="M 9.5 42.75 L 9.5 21.25 L 13.5 21.25 A 10 10.75 0 0 1 13.5 42.75 Z"/>
+    <!-- G: 306° arc, open at the upper right, closed by a bar into the centre.
+         Pulled 2.5u left of optical centre to tighten the pair into one mark. -->
+    <path d="M 48.4 24 A 10.75 10.75 0 1 0 51.9 33.1 L 41.25 33.1"/>
+  </g>
+</svg>

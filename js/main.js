@@ -276,10 +276,19 @@
     return document.documentElement.lang.indexOf('es') === 0 ? 'es' : 'en';
   }
 
+  var darkMQ = window.matchMedia('(prefers-color-scheme: dark)');
+
+  /* An empty or absent data-theme means "follow the system", which is the
+     default state — the attribute ships as data-theme="" and only gains a
+     value once the toggle is used. */
+  function themeIsSystem() {
+    return !document.documentElement.getAttribute('data-theme');
+  }
+
   function currentTheme() {
     var set = document.documentElement.getAttribute('data-theme');
     if (set) { return set; }
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    return darkMQ.matches ? 'dark' : 'light';
   }
 
   /* The theme button's label depends on both the language and which way the
@@ -340,6 +349,21 @@
     store.set('theme', currentTheme());
     labelTheme();
   });
+
+  /* While the theme follows the system, the palette and the icon track
+     prefers-color-scheme on their own because both are pure CSS. The button's
+     accessible name is not — it is computed in JS, so an OS theme change
+     (a sunset schedule, say) would leave it announcing the opposite of what
+     clicking does. Recompute it, but only while the system is still in charge:
+     once the toggle sets data-theme, the media query no longer decides. */
+  function onSchemeChange() {
+    if (themeIsSystem()) { labelTheme(); }
+  }
+  if (darkMQ.addEventListener) {
+    darkMQ.addEventListener('change', onSchemeChange);
+  } else if (darkMQ.addListener) {
+    darkMQ.addListener(onSchemeChange);          // Safari < 14
+  }
 
   /* ══════════════════════════════════════════════════════════════════════
      4. Mobile nav

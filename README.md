@@ -63,4 +63,25 @@ Opening `index.html` over `file://` also works, though the root-relative paths i
 
 ## Deploying
 
-Push to `main`. GitHub Pages publishes from the repository root.
+> [!IMPORTANT]
+> Pages currently publishes from **`master`**, not `main`. `main` is only the
+> default branch, and the two have been diverging for years — `master` holds
+> commits `main` never received. **Merging into `main` does not deploy anything
+> until the Pages source is switched.**
+
+To make `main` the deploy branch:
+
+1. Merge into `main` **first** — switching the source while `main` still holds
+   the old site would publish that older version.
+2. **Settings → Pages → Build and deployment → Branch**: change `master` to
+   `main`, folder `/ (root)`, then Save.
+3. Pages rebuilds automatically in about a minute.
+
+No GitHub Actions workflow is involved. The source is *Deploy from a branch*,
+so Pages builds and publishes on its own; a push to the deploy branch is the
+deploy. `.nojekyll` disables Jekyll processing, making the publish a plain
+static file copy.
+
+Once `main` is the deploy branch, `master` can be retired — but check what only
+exists there first (it still holds `CV-DiegoGongora.pdf` and
+`CVen-DiegoGongora.pdf`).

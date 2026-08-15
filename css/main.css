@@ -598,13 +598,29 @@ p { text-wrap: pretty; }
 
 /* ── Print / Save as PDF ───────────────────────────────────────────────── */
 @media print {
-  :root {
+  /* A bare :root is (0,1,0) and loses to both dark-theme paths —
+     :root[data-theme="dark"] and :root:not([data-theme="light"]) are (0,2,0).
+     Media queries add no specificity, so printing in dark mode would keep the
+     dark palette: with "background graphics" off (Chrome's default) that means
+     near-white text on white paper. Match those selectors here so the light
+     palette wins. This block must stay last in the file — it ties on
+     specificity and relies on source order. */
+  :root,
+  :root[data-theme="dark"],
+  :root:not([data-theme="light"]) {
+    color-scheme: light;
     --bg: #fff; --bg-alt: #fff; --surface: #fff;
     --border: #ccc; --border-str: #999;
     --text: #000; --text-soft: #222; --muted: #555;
     --accent: #06554a; --accent-str: #06554a; --accent-bg: #fff;
     --shadow: none;
   }
+
+  /* Reveal-on-scroll starts at opacity 0 and only clears once
+     IntersectionObserver fires. Printing without scrolling the whole page
+     (Cmd+P, or the footer button reached via a nav jump) would otherwise
+     leave every off-screen section blank in the PDF. */
+  [data-reveal] { opacity: 1 !important; transform: none !important; }
   .nav, .hero__cta, .hero__links, .more, .foot__meta,
   .contact__links, .burger, .nav__progress { display: none !important; }
   .hero::before { display: none; }

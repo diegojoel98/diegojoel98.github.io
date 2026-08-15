@@ -1,60 +1,36 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Page Not Found</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-
-        * {
-            line-height: 1.2;
-            margin: 0;
-        }
-
-        html {
-            color: #888;
-            display: table;
-            font-family: sans-serif;
-            height: 100%;
-            text-align: center;
-            width: 100%;
-        }
-
-        body {
-            display: table-cell;
-            vertical-align: middle;
-            margin: 2em auto;
-        }
-
-        h1 {
-            color: #555;
-            font-size: 2em;
-            font-weight: 400;
-        }
-
-        p {
-            margin: 0 auto;
-            width: 280px;
-        }
-
-        @media only screen and (max-width: 280px) {
-
-            body, p {
-                width: 95%;
-            }
-
-            h1 {
-                font-size: 1.5em;
-                margin: 0 0 0.3em;
-            }
-
-        }
-
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found — Diego Gongora</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="stylesheet" href="/css/main.css">
+<style>
+  .nf { min-height: 100svh; display: grid; place-items: center; text-align: center; padding: 2rem; }
+  .nf__code { font: 680 clamp(4rem, 18vw, 9rem)/1 var(--mono); letter-spacing: -.04em; color: var(--accent); }
+  .nf h1 { font-size: clamp(1.4rem, 4vw, 2rem); margin: .6rem 0 .8rem; }
+  .nf p { color: var(--muted); max-width: 44ch; margin: 0 auto 2rem; }
+</style>
 </head>
 <body>
-    <h1>Page Not Found</h1>
-    <p>Sorry, but the page you were trying to view does not exist.</p>
+  <main class="nf">
+    <div>
+      <p class="nf__code">404</p>
+      <h1 id="t">This page doesn't exist</h1>
+      <p id="d">The link may be out of date. Everything now lives on a single page.</p>
+      <a class="btn btn--primary" href="/" id="b">Go to the homepage</a>
+    </div>
+  </main>
+  <script>
+    if (/^es\b/i.test(navigator.language || '')) {
+      document.documentElement.lang = 'es-MX';
+      document.title = 'Página no encontrada — Diego Gongora';
+      document.getElementById('t').textContent = 'Esta página no existe';
+      document.getElementById('d').textContent = 'El enlace puede estar desactualizado. Todo el contenido vive ahora en una sola página.';
+      document.getElementById('b').textContent = 'Ir al inicio';
+    }
+  </script>
 </body>
 </html>
-<!-- IE needs 512+ bytes: http://blogs.msdn.com/b/ieinternals/archive/2010/08/19/http-error-pages-in-internet-explorer.aspx -->

@@ -18,11 +18,31 @@ js/main.js          Spanish dictionary, theme + language toggles, scroll spy, re
 education.html      ┐
 online-courses.html ├ redirect stubs kept so old inbound links still resolve
 others.html         ┘
+img/logo.svg        the monogram — master artwork, also the SVG favicon
+img/logo-512.png    raster export; logo-256.png alongside it
+favicon.ico         16/32/48/64, fallback for browsers without SVG icons
+apple-touch-icon.png  180×180 home-screen icon
 img/docs/           certificate PDFs (courses)
 img/others/         certificate PDFs (volunteering, workshops, languages)
 robots.txt          crawler policy
 sitemap.xml         single-URL sitemap
 ```
+
+## The logo
+
+`img/logo.svg` is the master: a monoline **DG** monogram on a rounded tile, with
+every path hand-plotted rather than set in a typeface, so it renders identically
+without depending on a font being available.
+
+The nav repeats the same geometry inline in `index.html`, drawn in `currentColor`
+over a CSS tile, so it follows the theme rather than baking in one palette.
+Editing the mark means editing both — they are deliberately duplicated to keep
+the nav free of an extra request.
+
+Rasters are regenerated from the SVG, not edited by hand: Chrome headless
+renders it at 1024px and the smaller sizes are downsampled from that. The 16
+and 32 entries in `favicon.ico` come from a slightly bolder, tighter variant,
+since the full-size padding and stroke lose too much at that pixel budget.
 
 ## How the bilingual content works
 
@@ -63,25 +83,27 @@ Opening `index.html` over `file://` also works, though the root-relative paths i
 
 ## Deploying
 
-> [!IMPORTANT]
-> Pages currently publishes from **`master`**, not `main`. `main` is only the
-> default branch, and the two have been diverging for years — `master` holds
-> commits `main` never received. **Merging into `main` does not deploy anything
-> until the Pages source is switched.**
+**Push to `main`.** That is the whole process — it is both the default branch
+and the Pages source, so a push is a deploy and it goes live in about a minute.
 
-To make `main` the deploy branch:
+No GitHub Actions workflow is involved: the Pages source is *Deploy from a
+branch* (`main`, `/ (root)`), so Pages builds and publishes on its own.
+`.nojekyll` disables Jekyll processing, making the publish a plain static copy.
 
-1. Merge into `main` **first** — switching the source while `main` still holds
-   the old site would publish that older version.
-2. **Settings → Pages → Build and deployment → Branch**: change `master` to
-   `main`, folder `/ (root)`, then Save.
-3. Pages rebuilds automatically in about a minute.
+Because a push publishes immediately, changes worth reviewing should go through
+a branch and a pull request rather than straight to `main`.
 
-No GitHub Actions workflow is involved. The source is *Deploy from a branch*,
-so Pages builds and publishes on its own; a push to the deploy branch is the
-deploy. `.nojekyll` disables Jekyll processing, making the publish a plain
-static file copy.
+### History before August 2026
 
-Once `main` is the deploy branch, `master` can be retired — but check what only
-exists there first (it still holds `CV-DiegoGongora.pdf` and
-`CVen-DiegoGongora.pdf`).
+Pages used to publish from a `master` branch that had drifted years apart from
+`main` — which is how the live site sat on a 2021 version while `main` held
+something else. Both branches were retired when the rebuilt site landed:
+`master`'s 38 commits are preserved in the **`archive/master`** tag, so nothing
+was lost. Recover a file from it with:
+
+```sh
+git show archive/master:public/docs/CV-DiegoGongora.pdf > cv.pdf
+```
+
+That tag is the only place the two CV PDFs (`CV-DiegoGongora.pdf`,
+`CVen-DiegoGongora.pdf`) and `Habilidades_digitales.pdf` still exist.

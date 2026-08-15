@@ -38,7 +38,7 @@
 
     'k.about': '01 — Perfil',
     'about.h2': 'Líder hands-on, no espectador',
-    'about.p1': 'Soy Frontend Tech Lead con más de <b>5 años</b> desarrollando y modernizando ' +
+    'about.p1': 'Soy Frontend Tech Lead con <b>6 años</b> desarrollando y modernizando ' +
       'aplicaciones web empresariales. Mi perfil es deliberadamente hands-on: escribo el código que ' +
       'después pido revisar, y soy responsable de la factibilidad técnica y de la calidad de lo que se entrega.',
     'about.p2': 'En el día a día eso significa guiar las decisiones de arquitectura, diseño y ' +
@@ -183,7 +183,8 @@
     'lang.es': 'Español',
     'lang.es.lvl': 'Nativo',
     'lang.en': 'Inglés',
-    'lang.en.lvl': 'Competencia profesional · certificado B1 (CIL UADY)',
+    'lang.en.lvl': 'Competencia profesional',
+    'lang.en.cert': 'certificado CIL UADY ↗',
     'cert.link': 'certificado ↗',
     'cert.letter': 'carta ↗',
     'cert.part1': 'certificado I ↗',

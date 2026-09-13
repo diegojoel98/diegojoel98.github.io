@@ -22,8 +22,9 @@
     'nav.contact': 'Contacto',
 
     'hero.available': 'Mérida, Yucatán · México',
-    'hero.role': 'Frontend Tech Lead',
-    'hero.role2': 'Tech Writer',
+    'hero.role': 'Tech Lead',
+    'hero.role2': 'Senior Software Engineer',
+    'hero.role3': 'Tech Writer',
     'hero.lede': 'Desarrollo y modernizo aplicaciones web empresariales con <b>Vue</b>, <b>Angular</b> y ' +
       '<b>TypeScript</b>. Perfil hands-on especializado en arquitectura frontend, microfrontends, ' +
       'aplicaciones administrativas, autenticación y observabilidad. Lidero decisiones técnicas, ' +
@@ -32,12 +33,12 @@
     'hero.cta2': 'Contáctame',
 
     'stats.1t': 'Años de experiencia',
-    'stats.2t': 'Lidero el frontend en',
+    'stats.2t': 'Lideré el frontend en',
     'stats.3t': 'Artículos publicados',
     'stats.4t': 'Certificación',
 
     'k.about': '01 — Perfil',
-    'about.h2': 'Líder hands-on, no espectador',
+    'about.h2': 'Líder hands-on',
     'about.p1': 'Soy Frontend Tech Lead con <b>6 años</b> desarrollando y modernizando ' +
       'aplicaciones web empresariales. Sigo escribiendo el código que después pido revisar, y ' +
       'respondo por la factibilidad técnica y la calidad de lo que se entrega.',
@@ -65,9 +66,9 @@
     'label.freelance': 'Freelance',
     'label.stack': 'Stack',
 
-    'exp.palace.tenure': 'Desde mar. 2024',
+    'exp.palace.tenure': 'mar. 2024 — sep. 2026 · 2 años 6 meses',
     'exp.palace.r1.title': 'Frontend Tech Lead',
-    'exp.palace.r1.date': 'dic. 2025 — Actualidad',
+    'exp.palace.r1.date': 'dic. 2025 — sep. 2026 · 9 meses',
     'exp.palace.r1.b1': 'Guiar la implementación y tomar decisiones sobre arquitectura del producto, diseño y herramientas.',
     'exp.palace.r1.b2': 'Liderar la toma de decisiones técnicas y de arquitectura del frontend.',
     'exp.palace.r1.b3': 'Participar activamente en el Discovery y en la definición de posibles soluciones.',
@@ -151,7 +152,7 @@
     'post.5.d': 'La introducción a microfrontends que me hubiera gustado leer primero.',
 
     'k.projects': '05 — Proyectos',
-    'projects.h2': 'Lo que he construido en abierto',
+    'projects.h2': 'Lo que he construido',
     'projects.note': 'Mi trabajo profesional vive en repositorios privados. Estos son proyectos personales y académicos.',
     'projects.all': 'Todos los repositorios en GitHub ↗',
     'proj.visit': 'Ver sitio ↗',
@@ -216,7 +217,7 @@
 
     'k.contact': '07 — Contacto',
     'contact.h2': 'Hablemos',
-    'contact.lede': 'Abierto a conversar sobre arquitectura frontend, liderazgo técnico o algún ' +
+    'contact.lede': 'Abierto a conversar sobre desarrollo de software, arquitectura frontend, liderazgo técnico o algún ' +
       'problema interesante en el que estés atorado. La vía más rápida es el correo.',
 
     'foot.loc': 'Mérida, Yucatán, México',

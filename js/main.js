@@ -66,9 +66,9 @@
     'label.freelance': 'Freelance',
     'label.stack': 'Stack',
 
-    'exp.palace.tenure': 'mar. 2024 — sep. 2026 · 2 años 6 meses',
+    'exp.palace.tenure': 'mar. 2024 — sep. 2026 · 2 años 7 meses',
     'exp.palace.r1.title': 'Frontend Tech Lead',
-    'exp.palace.r1.date': 'dic. 2025 — sep. 2026 · 9 meses',
+    'exp.palace.r1.date': 'dic. 2025 — sep. 2026 · 10 meses',
     'exp.palace.r1.b1': 'Guiar la implementación y tomar decisiones sobre arquitectura del producto, diseño y herramientas.',
     'exp.palace.r1.b2': 'Liderar la toma de decisiones técnicas y de arquitectura del frontend.',
     'exp.palace.r1.b3': 'Participar activamente en el Discovery y en la definición de posibles soluciones.',
